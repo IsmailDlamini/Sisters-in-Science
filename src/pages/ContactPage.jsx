@@ -1,7 +1,11 @@
 
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <>
+      <div className="contact-page-container">
+        
+      </div>
+    </>
   )
 }
 

@@ -7,3 +7,221 @@
   --font-poppins: Poppins;
   --font-raleway: Raleway;
 }
+
+.services-page-container {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-page-container .page-text {
+  color: #571b5b;
+  font-family: var(--font-roboto);
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 130px;
+  margin: 0 auto;
+  width: fit-content;
+  text-shadow: 1px 1px 0 rgba(53, 16, 56, 1), -1px 1px 0 rgba(53, 16, 56, 1),
+    -1px -1px 0 rgba(53, 16, 56, 1), 1px -1px 0 rgba(53, 16, 56, 1);
+  z-index: 1;
+}
+
+.services-page-container .page-text span {
+  color: rgba(254, 205, 7, 1);
+}
+
+.services-page-container .services {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.services-page-container .services .service {
+  width: 48%;
+  margin-top: 100px;
+}
+
+.services-page-container .services .service-title {
+  width: 100%;
+  text-align: center;
+  color: #795c7b;
+  font-family: var(--font-raleway);
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.services-page-container .services .service-description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: #250227;
+  text-align: center;
+  font-family: var(--font-raleway);
+  font-size: 1.4vw;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.services-page-container .services button {
+  display: flex;
+  padding: 13px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #795c7b;
+  font-family: var(--font-raleway);
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid #795c7b;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.services-page-container .services .image {
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.services-page-container .services .image img {
+  width: 100%;
+}
+
+.services-page-container .atom-1-services {
+  position: absolute;
+  z-index: 0;
+  top: -10%;
+  left: 30vw;
+}
+
+.services-page-container .atom-2-services {
+  position: absolute;
+  z-index: 0;
+  bottom: 10%;
+}
+.services-page-container .atom-3-services {
+  position: absolute;
+  z-index: 0;
+  bottom: 10%;
+  left: 60vw;
+}
+
+.services-page-container .atom-4-services{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+      overflow-x: hidden;
+    }
+
+  .services-page-container {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .services-page-container .page-text {
+    font-size: 14vw;
+    padding-top: 80px;
+    width: fit-content;
+    width: 85%;
+    text-align: center;
+  }
+
+  .services-page-container .services {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    z-index: 1;
+    flex-direction: column;
+  }
+
+  .services-page-container .services .service {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .services-page-container .services .service-title {
+    width: 100%;
+
+    font-size: 9vw;
+  }
+
+  .services-page-container .services .service-description {
+    width: 100%;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+
+  .services-page-container .services button {
+  
+    padding: 6px 14px;
+    font-size: 4vw;
+    border-radius: 6px;
+  }
+
+  .services-page-container .services .image {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .services-page-container .services .image img {
+    width: 100%;
+  }
+
+  .services-page-container .atom-1-services {
+    position: absolute;
+    z-index: 0;
+    top: -5%;
+    left: 50vw;
+    width: 60vw;
+  }
+
+  .services-page-container .atom-2-services {
+    position: absolute;
+    z-index: 0;
+    top: 300px;
+    width: 60vw;
+    left: -20%;
+  }
+  .services-page-container .atom-3-services {
+    position: absolute;
+    z-index: 0;
+    top: 800px;
+    left: 60vw;
+    width: 60vw;
+  }
+
+  .services-page-container .atom-4-services{
+    position: absolute;
+    z-index: 0;
+   bottom: 10%;
+    left: -10%;
+    width: 60vw;
+    display: block;
+  }
+}

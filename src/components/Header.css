@@ -113,7 +113,7 @@ body {
       .MobileNavBar {
         width: 100vw;
         height: 70px;
-        background-color: rgba(92, 123, 82, 1);
+        background-color: rgba(53, 16, 56, 1);
         position: absolute;
         top: 70px;
         display: flex;
@@ -132,13 +132,17 @@ body {
     
       .MobileNavBar ul li {
         font-family: var(--font-raleway);
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-weight: 400;
         line-height: 16px;
         letter-spacing: 0em;
         text-align: left;
         margin-left: 3vw;
         color: rgba(255, 255, 255, 1);
+      }
+
+      .MobileNavBar ul li img{
+        width: 8em;
       }
     
       .MobileNavClosed {
