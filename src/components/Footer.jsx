@@ -2,12 +2,13 @@ import facebookIcon from '../assets/facebookIcon.svg'
 import linkedinIcon from '../assets/linkedinIcon.svg'
 import footerSiteLogo from '../assets/footerSiteLogo.svg'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <>
     <div className="footer">
-          <img src={footerSiteLogo} className="footer-logo" alt="" />
+          <Link to="/"><img src={footerSiteLogo} className="footer-logo" alt="" /></Link>
           <div className="information">
             <div className="nav">
               <ul>
@@ -19,7 +20,7 @@ const Footer = () => {
               
             </div>
             <div className="credits">
-            © Sisters in Science | A Plus Systems
+            © STEAM Academy | A Plus Systems
             </div>
           </div>
 

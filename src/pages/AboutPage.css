@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap");
+
+
 
 :root {
   --font-roboto: Roboto;
@@ -43,7 +46,6 @@ body {
 .about-page-container .information-container .image {
   width: 25%;
   height: 42vw;
-  background-color: yellow;
   background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\SiteVisual2Desktop.png");
   background-size: cover;
   z-index: 2;
@@ -66,13 +68,13 @@ body {
 
 .about-page-container .information-container .text .content .description div {
   color: #250227;
-  font-family: var(--font-raleway);
+  font-family: var(--font-roboto);
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
   margin-top: 15px;
-  width: 95%;
+  width: 90%;
 }
 
 .atom-1-about {
@@ -167,7 +169,7 @@ body {
   .description
   div:nth-child(1) {
   color: rgba(121, 92, 123, 1);
-  font-family: var(--font-raleway);
+  font-family: var(--font-roboto);
   font-size: 4vw;
   font-style: normal;
   font-weight: 200;
@@ -181,7 +183,7 @@ body {
   .description
   div:nth-child(2) {
   color: rgba(121, 92, 123, 1);
-  font-family: var(--font-raleway);
+  font-family: var(--font-roboto);
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 200;

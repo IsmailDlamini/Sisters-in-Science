@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import "./HomePage.css";
 import Atom from "../assets/Atom.png";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -38,6 +39,8 @@ const HomePage = () => {
 
         <img src={Atom} className="atom-1-home" alt="" />
       <img src={Atom} className="atom-2-home" alt="" />
+
+      <Footer />
       </div>
 
       

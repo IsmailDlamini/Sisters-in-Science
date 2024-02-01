@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap");
 
@@ -47,7 +47,7 @@ body {
   font-size: 6vw;
   font-style: normal;
   font-weight: 300;
-  line-height: 90px;
+  line-height: normal;
   text-shadow: 1px 1px 0 rgba(53, 16, 56, 1), -1px 1px 0 rgba(53, 16, 56, 1),
     -1px -1px 0 rgba(53, 16, 56, 1), 1px -1px 0 rgba(53, 16, 56, 1);
   margin-bottom: 10px;
@@ -59,11 +59,13 @@ body {
 
 .home-page-container .information-container .content div:nth-child(2) {
   color: #250227;
-  font-family: var(--font-raleway);
+  font-family: var(--font-roboto);
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
+  width: 90%;
+  margin-top: 20px;
 }
 
 .home-page-container .information-container .content div:nth-child(2) span {
@@ -78,18 +80,19 @@ body {
   height: fit-content;
   z-index: 2;
   overflow-y: hidden;
+  margin-top: 30px;
 }
 
 .home-page-container .image-container .img {
   width: 75vw;
-  height: 400px;
+  height: 30vw;
   background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\SiteVisual1Desktop.png");
   background-size: cover;
 }
 
 .home-page-container .information-container .buttons {
   margin-left: 5vw;
-  transform: translateY(50px);
+  transform: translateY(100px);
 }
 
 .home-page-container .information-container .buttons button:nth-child(1) {
