@@ -1,9 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./ServicesPage.css";
-import projectImage1 from "../assets/projectImage1.png";
-import projectImage2 from "../assets/projectImage2.png";
-import projectImage3 from "../assets/projectImage3.png";
+import serviceImage1 from "../assets/serviceImage1.png"
+import serviceImage2 from "../assets/serviceImage2.png"
+import serviceImage3 from "../assets/serviceImage3.png"
 import Atom from "../assets/Atom.png";
 
 const ServicesPage = () => {
@@ -16,17 +16,19 @@ const ServicesPage = () => {
 
         <div className="services">
           <div className="service">
-            <div className="service-title">Workshops</div>
+            <div className="service-title">Mentorship</div>
             <div className="service-description">
-              Our workshops are vibrant hubs of scientific exploration, designed
-              to captivate and educate teenage girls in various scientific
-              domains. Through interactive sessions and hands-on activities, we
-              ignite curiosity, fostering a love for science and its practical
-              applications.
+              Our initiatives are designed to ensure employability and
+              professionalism among teenagers, particularly those interested in
+              science. We provide them with the guidance and resources they need
+              to explore diverse scientific pathways. Our aim is to help them
+              navigate their passions effectively, thereby fostering their
+              professional growth and ensuring their readiness for the future
+              workplace.
             </div>
             <button>Enquire Today</button>
             <div className="image">
-              <img src={projectImage1} alt="" />
+              <img src={serviceImage1} alt="" />
             </div>
           </div>
 
@@ -34,14 +36,14 @@ const ServicesPage = () => {
             <div className="service-title">Outreach Programs</div>
             <div className="service-description">
               Our outreach initiatives extend beyond the classroom, reaching out
-              to local communities to inspire and engage young girls in the
+              to local communities to inspire and engage young learners in the
               fascinating world of science. These programs aim to break barriers
               by making science accessible and exciting, nurturing an interest
-              in STEM disciplines from an early age.
+              in STEAM disciplines from an early age.
             </div>
             <button>Enquire Today</button>
             <div className="image">
-              <img src={projectImage2} alt="" />
+              <img src={serviceImage2} alt="" />
             </div>
           </div>
 
@@ -56,7 +58,7 @@ const ServicesPage = () => {
             </div>
             <button>Enquire Today</button>
             <div className="image">
-              <img src={projectImage3} alt="" />
+              <img src={serviceImage3} alt="" />
             </div>
           </div>
         </div>

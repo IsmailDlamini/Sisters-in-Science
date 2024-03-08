@@ -1,13 +1,9 @@
 import Header from "../components/Header";
 import "./AboutPage.css";
-import SiteVisual2Desktop from "../assets/SiteVisual2Desktop.png";
 import Atom from "../assets/Atom.png";
-import projectImage1 from '../assets/projectImage1.png'
-import projectImage2 from '../assets/projectImage2.png'
-import projectImage3 from '../assets/projectImage3.png'
-import footerSiteLogo from '../assets/footerSiteLogo.svg'
-import facebookIcon from '../assets/facebookIcon.svg'
-import linkedinIcon from '../assets/linkedinIcon.svg'
+import projectImage1 from "../assets/projectImage1.png";
+import projectImage2 from "../assets/projectImage2.png";
+import projectImage3 from "../assets/projectImage3.png";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
@@ -23,9 +19,10 @@ const AboutPage = () => {
               <div className="description">
                 <div>
                   Sisters in Science is a beacon of empowerment, dedicated to
-                  illuminating the path for teenage girls eager to explore the
-                  wonders of science. Our outreach program serves as a catalyst,
-                  igniting a passion for scientific discovery among young minds.
+                  illuminating the path for teenagers eager to explore the
+                  wonders of science and technology. Our outreach program serves
+                  as a catalyst, igniting a passion for scientific discovery
+                  among young minds.
                 </div>
 
                 <div>
@@ -34,15 +31,15 @@ const AboutPage = () => {
                   designed to bridge the gap between curiosity and
                   comprehension. Each workshop serves as a vibrant platform,
                   fostering hands-on experiences and interactive learning,
-                  ensuring that science isn't just a subject but an immersive
+                  ensuring that science isn{"'"}t just a subject but an immersive
                   journey filled with excitement and possibility.
                 </div>
 
                 <div>
                   Since our inception, Sisters in Science has proudly championed
-                  the cause of inclusivity in STEM education. We believe in
+                  the cause of inclusivity in STEAM education. We believe in
                   breaking down barriers and instilling confidence in young
-                  girls to pursue scientific endeavors fearlessly.
+                  girls and boys to pursue scientific endeavours fearlessly.
                 </div>
               </div>
 
@@ -57,17 +54,18 @@ const AboutPage = () => {
 
         <div className="project-section">
           <div className="text">
-            What have we <span>done?</span>
+            What are we <span>doing?</span>
           </div>
 
           <div className="projects">
             <div className="project">
               <div className="description">
-                <div>Project 1</div>
+                <div>Rewarding Excellence</div>
                 <div>
-                  For this project, we managed to achieve remarkable milestones
-                  by harnessing innovative technologies and fostering
-                  collaborative partnerships.
+                  We set an emphasis on rewarding excellence among teenagers. By
+                  recognizing and rewarding their outstanding performance, we
+                  aim to motivate them to maintain their high level of
+                  achievement.
                 </div>
               </div>
               <div className="image">
@@ -77,11 +75,12 @@ const AboutPage = () => {
 
             <div className="project">
               <div className="description">
-                <div>Project 2</div>
+                <div>Closing Resources Gaps</div>
                 <div>
-                  For this project, we managed to achieve remarkable milestones
-                  by harnessing innovative technologies and fostering
-                  collaborative partnerships.
+                  We take concrete steps such as donating lab equipment and
+                  providing assistance in science experiments. These actions are
+                  aimed at empowering teenagers, particularly those with a keen
+                  interest in science.
                 </div>
               </div>
               <div className="image">
@@ -89,22 +88,22 @@ const AboutPage = () => {
               </div>
             </div>
 
-
             <div className="project">
               <div className="description">
-                <div>Project 3</div>
+                <div>Mentoring Tomorrow’s Professionals</div>
                 <div>
-                  For this project, we managed to achieve remarkable milestones
-                  by harnessing innovative technologies and fostering
-                  collaborative partnerships.
+                  We are deeply committed to shaping the work ethic of the
+                  youth. We provide guidance and mentorship to help them develop
+                  a professional attitude and instil in them the importance of
+                  diligence at work. Our active involvement and support are
+                  aimed at moulding them into the dedicated professionals of
+                  tomorrow.
                 </div>
               </div>
               <div className="image">
                 <img src={projectImage3} alt="" />
               </div>
             </div>
-
-
           </div>
         </div>
 
@@ -115,11 +114,7 @@ const AboutPage = () => {
         <img src={Atom} className="atom-3-about" alt="" />
         <img src={Atom} className="atom-4-about" alt="" />
 
-
-    
-
         <Footer />
-
       </div>
     </>
   );

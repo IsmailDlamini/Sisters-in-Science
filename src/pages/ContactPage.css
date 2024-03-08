@@ -26,7 +26,7 @@
   line-height: normal;
   text-shadow: 1px 1px 0 rgba(53, 16, 56, 1), -1px 1px 0 rgba(53, 16, 56, 1),
     -1px -1px 0 rgba(53, 16, 56, 1), 1px -1px 0 rgba(53, 16, 56, 1);
-    z-index: 1;
+  z-index: 1;
 }
 
 .contact-page-container .main-text span {
@@ -41,32 +41,36 @@
 }
 
 .contact-page-container .main-content .form-container {
-    width: 50%;
-
+  width: 50%;
 }
 
-.contact-page-container .main-content .image-container{
-    height: 600px;
-    width: 50%;
-    margin-left: 5%;
-    display: flex;
-    justify-content: center;
+.contact-page-container .main-content .image-container {
+  height: 600px;
+  width: 50%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
 }
-.contact-page-container .main-content .image-container .image{
-    width: 60%;
-    height: 100%;
-    background-image: url('C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImage.png');
-    background-size: cover;
+.contact-page-container .main-content .image-container .image {
+  width: 80%;
+  height: 90%;
+  background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImage.png");
+  background-size: cover;
 }
 
 .contact-page-container .main-content .form-container form {
   display: flex;
   flex-direction: column;
   width: 100%;
-
 }
 
 .contact-page-container .main-content .form-container form input {
+  color: #795c7b;
+  font-family: Roboto;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .contact-page-container .main-content .form-container form label {
@@ -105,6 +109,12 @@
   min-width: 100%;
   max-width: 100%;
   background: transparent;
+  color: #795c7b;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .contact-page-container
@@ -139,240 +149,229 @@
   border: none;
 }
 
-.contact-page-container .atom-1-contact{
-    position: absolute;
-    z-index: 0;
-    top: -20%;
-    left: 40vw;
-    width: 35vw;
+.contact-page-container .atom-1-contact {
+  position: absolute;
+  z-index: 0;
+  top: -20%;
+  left: 40vw;
+  width: 35vw;
 }
-.contact-page-container .atom-2-contact{
-    position: absolute;
-    z-index: 0;
-    top: 300px;
-    left: -10%;
-    width: 35vw;
-}
-
-
-.contact-page-container .atom-3-contact{
-    position: absolute;
-    z-index: 0;
-    top: 350px;
-    left: 70%;
-    width: 35vw;
+.contact-page-container .atom-2-contact {
+  position: absolute;
+  z-index: 0;
+  top: 300px;
+  left: -10%;
+  width: 35vw;
 }
 
-.contact-page-container .atom-4-contact{
-   display: none;
+.contact-page-container .atom-3-contact {
+  position: absolute;
+  z-index: 0;
+  top: 350px;
+  left: 70%;
+  width: 35vw;
 }
 
+.contact-page-container .atom-4-contact {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
 
-    body{
-        overflow-x: hidden;
-    }
+  .contact-page-container {
+    width: 100vw;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
 
-    .contact-page-container {
-        width: 100vw;
-        padding-top: 80px;
-        display: flex;
-        flex-direction: column;
-        overflow-x: hidden;
-      }
-      
-      .contact-page-container .main-text {
-        width: 100%;
-        text-align: center;
-        font-size: 14vw;    
-      }
-        
-      .contact-page-container .main-content {
-        width: 100%;
-        margin: 10px auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-      }
-      
-      .contact-page-container .main-content .form-container {
-          width: 90%;
-          margin: 0 auto;
-      }
-      
-      .contact-page-container .main-content .image-container{
-          height: 150px;
-          width: 100%;
-          margin-left: 0;
-          display: flex;
-          justify-content: center;
-          margin-top: 20px;
-      }
-      .contact-page-container .main-content .image-container .image{
-          width: 95%;
-          height: 100%;
-          background-image: url('C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImageMobile.png');
-      }
-      
-      /* .contact-page-container .main-content .form-container form {
+  .contact-page-container .main-text {
+    width: 100%;
+    text-align: center;
+    font-size: 14vw;
+  }
+
+  .contact-page-container .main-content {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-page-container .main-content .form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-page-container .main-content .image-container {
+    height: 150px;
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .contact-page-container .main-content .image-container .image {
+    width: 95%;
+    height: 100%;
+    background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImageMobile.png");
+  }
+
+  /* .contact-page-container .main-content .form-container form {
         display: flex;
         flex-direction: column;
         width: 100%;
       } */
-      
-      
-      .contact-page-container .main-content .form-container form label {
-        font-size: 5vw;
-        
-      }
-      
-      
-      
-      .contact-page-container .main-content .form-container form input::placeholder {
-    
-        font-size: 4vw;
-    
-      }
-      
-      
-      
-      .contact-page-container
-        .main-content
-        .form-container
-        form
-        textarea::placeholder {
-        font-size: 4vw;
-      }
-      
-      .contact-page-container .main-content .form-container form button {
-        
-        font-size: 4vw;
-      }
-      
-      .contact-page-container .atom-1-contact{
-          
-          top: -5%;
-          left: 40vw;
-          width: 60vw;
-      }
-      .contact-page-container .atom-2-contact{
-          position: absolute;
-          z-index: 0;
-          top: 500px;
-          left: -10%;
-          width: 60vw;
-      }
-      
-      
-      .contact-page-container .atom-3-contact{
-          display: none;
-      }
-      
-      .contact-page-container .atom-4-contact{
-         display: none;
-      }
-      
+
+  .contact-page-container .main-content .form-container form label {
+    font-size: 5vw;
+  }
+
+  .contact-page-container
+    .main-content
+    .form-container
+    form
+    input::placeholder {
+    font-size: 4vw;
+  }
+
+  .contact-page-container
+    .main-content
+    .form-container
+    form
+    textarea::placeholder {
+    font-size: 4vw;
+  }
+
+  .contact-page-container .main-content .form-container form button {
+    font-size: 4vw;
+  }
+
+  .contact-page-container .atom-1-contact {
+    top: -5%;
+    left: 40vw;
+    width: 60vw;
+  }
+  .contact-page-container .atom-2-contact {
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+    left: -10%;
+    width: 60vw;
+  }
+
+  .contact-page-container .atom-3-contact {
+    display: none;
+  }
+
+  .contact-page-container .atom-4-contact {
+    display: none;
+  }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) 
-{
-    body{
-        overflow-x: hidden;
-    }
+  .contact-page-container {
+    width: 100vw;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
 
-    .contact-page-container {
-        width: 100vw;
-        padding-top: 80px;
-        display: flex;
-        flex-direction: column;
-        overflow-x: hidden;
-      }
-      
-      .contact-page-container .main-text {
-        width: 100%;
-        text-align: center;
-        font-size: 10vw;    
-      }
-        
-      .contact-page-container .main-content {
-        width: 100%;
-        margin: 10px auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-      }
-      
-      .contact-page-container .main-content .form-container {
-          width: 90%;
-          margin: 0 auto;
-      }
-      
-      .contact-page-container .main-content .image-container{
-          height: 300px;
-          width: 100%;
-          margin-left: 0;
-          display: flex;
-          justify-content: center;
-          margin-top: 20px;
-      }
-      .contact-page-container .main-content .image-container .image{
-          width: 95%;
-          height: 100%;
-          background-image: url('C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImageMobile.png');
-      }
-      
-      
-      .contact-page-container .main-content .form-container form label {
-        font-size: 5vw;
-        
-      }
-      
-      
-      
-      .contact-page-container .main-content .form-container form input::placeholder {
-    
-        font-size: 4vw;
-    
-      }
-      
-      
-      
-      .contact-page-container
-        .main-content
-        .form-container
-        form
-        textarea::placeholder {
-        font-size: 4vw;
-      }
-      
-      .contact-page-container .main-content .form-container form button {
-        
-        font-size: 4vw;
-      }
-      
-      .contact-page-container .atom-1-contact{
-       
-          top: -5%;
-          left: 40vw;
-          width: 60vw;
-      }
-      .contact-page-container .atom-2-contact{
-          position: absolute;
-          z-index: 0;
-          top: 500px;
-          left: -10%;
-          width: 60vw;
-      }
-        
-      .contact-page-container .atom-3-contact{
-          display: none;
-      }
-      
-      .contact-page-container .atom-4-contact{
-         display: none;
-      }      
+  .contact-page-container .main-text {
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  .contact-page-container .main-content {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .contact-page-container .main-content .form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-page-container .main-content .image-container {
+    height: 300px;
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .contact-page-container .main-content .image-container .image {
+    width: 95%;
+    height: 100%;
+    background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImageMobile.png");
+  }
+
+  .contact-page-container .main-content .form-container form input {
+    font-size: 4vw;
+  }
+
+  .contact-page-container .main-content .form-container form textarea {
+
+    font-size: 4vw;
+  }
+
+  .contact-page-container .main-content .form-container form label {
+    font-size: 5vw;
+  }
+
+  .contact-page-container
+    .main-content
+    .form-container
+    form
+    input::placeholder {
+    font-size: 4vw;
+  }
+
+  .contact-page-container
+    .main-content
+    .form-container
+    form
+    textarea::placeholder {
+    font-size: 4vw;
+  }
+
+  .contact-page-container .main-content .form-container form button {
+    font-size: 4vw;
+  }
+
+  .contact-page-container .atom-1-contact {
+    top: -5%;
+    left: 40vw;
+    width: 60vw;
+  }
+  .contact-page-container .atom-2-contact {
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+    left: -10%;
+    width: 60vw;
+  }
+
+  .contact-page-container .atom-3-contact {
+    display: none;
+  }
+
+  .contact-page-container .atom-4-contact {
+    display: none;
+  }
 }
-
-

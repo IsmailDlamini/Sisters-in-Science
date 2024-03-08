@@ -62,7 +62,7 @@ body {
   font-family: var(--font-roboto);
   font-size: 1.5vw;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   line-height: normal;
   width: 90%;
   margin-top: 20px;
@@ -138,7 +138,7 @@ body {
 .atom-1-home {
   position: absolute;
   z-index: 0;
-  top: -40%;
+  top: -20%;
   width: 50vw;
   left: 60vw;
 }
@@ -170,7 +170,7 @@ body {
 
   .home-page-container .information-container .content div:nth-child(1) {
     font-size: 13vw;
-    font-weight: 200;
+    font-weight: 400;
     line-height: normal;
     margin-bottom: 10px;
     margin-left: 0px;

@@ -13,6 +13,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .services-page-container .page-text {
@@ -41,11 +42,16 @@
   margin: 0 auto;
   flex-wrap: wrap;
   z-index: 1;
+  margin-bottom: 70px;
 }
 
 .services-page-container .services .service {
   width: 48%;
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .services-page-container .services .service-title {
@@ -246,7 +252,7 @@
 
 .services-page-container .page-text {
   font-size: 7vw;
-  padding-top: 80px;
+  padding-top: 100px;
   width: fit-content;
   width: 85%;
   text-align: center;

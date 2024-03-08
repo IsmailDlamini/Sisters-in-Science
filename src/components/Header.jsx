@@ -34,6 +34,9 @@ const Header = (prop) => {
             <Link to={"/contact"} style={{ textDecoration: "none" }}>
               <li style={{ color: prop.color }}>Contact Us</li>
             </Link>
+            <Link to={"/gallery"} style={{ textDecoration: "none" }}>
+              <li style={{ color: prop.color }}>Gallery</li>
+            </Link>
           </ul>
         </div>
 
@@ -72,6 +75,9 @@ const Header = (prop) => {
           </Link>
           <Link to={"/contact"} style={{ textDecoration: "none" }}>
             <li>Contact Us</li>
+          </Link>
+          <Link to={"/gallery"} style={{ textDecoration: "none" }}>
+            <li>Gallery</li>
           </Link>
           <Link style={{ textDecoration: "none" }}>
             <li>
