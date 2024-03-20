@@ -1,10 +1,11 @@
 import Header from "../components/Header";
 import "./AboutPage.css";
 import Atom from "../assets/Atom.png";
-import projectImage1 from "../assets/projectImage1.png";
-import projectImage2 from "../assets/projectImage2.png";
-import projectImage3 from "../assets/projectImage3.png";
+import projectImage1 from "../assets/site-image-06.jpg";
+import projectImage2 from "../assets/site-image-05.jpg";
+import projectImage3 from "../assets/site-image-07.jpg";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -43,7 +44,7 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              <button>Contact Us</button>
+              <Link to={"/contact"} style={{textDecoration : "none"}}><button>Contact Us</button></Link>
             </div>
           </div>
 

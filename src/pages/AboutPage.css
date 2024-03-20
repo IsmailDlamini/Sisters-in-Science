@@ -75,6 +75,7 @@ body {
   line-height: normal;
   margin-top: 15px;
   width: 90%;
+  font-weight: 300;
 }
 
 .atom-1-about {
@@ -115,6 +116,7 @@ body {
   line-height: normal;
   border: none;
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .about-page-container .project-section {
@@ -197,7 +199,7 @@ body {
   font-family: var(--font-roboto);
   font-size: 1.5vw;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   line-height: normal;
   margin-top: 30px;
 }
@@ -396,6 +398,7 @@ body {
     font-family: var(--font-raleway);
     font-size: 3.3vw;
     width: 98%;
+
   }
 
   .atom-1-about {
@@ -489,6 +492,7 @@ body {
     font-size: 5vw;
     margin-top: 15px;
     margin-bottom: 25px;
+    font-weight: 300;
   }
 
   .about-page-container .project-section .projects .project img {

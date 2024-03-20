@@ -69,16 +69,17 @@ body {
 }
 
 .home-page-container .information-container .content div:nth-child(2) span {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .home-page-container .image-container {
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: right;
   flex: 1;
   height: fit-content;
-  z-index: 2;
+  z-index: 1;
   overflow-y: hidden;
   margin-top: 30px;
 }
@@ -86,13 +87,20 @@ body {
 .home-page-container .image-container .img {
   width: 75vw;
   height: 30vw;
-  background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\SiteVisual1Desktop.png");
+  background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\site-image-01.jpg");
   background-size: cover;
 }
 
 .home-page-container .information-container .buttons {
   margin-left: 5vw;
   transform: translateY(100px);
+  position: relative;
+  z-index: 5;
+}
+
+
+.home-page-container .information-container .buttons button{
+  cursor: pointer;
 }
 
 .home-page-container .information-container .buttons button:nth-child(1) {
@@ -109,9 +117,10 @@ body {
   font-weight: 300;
   line-height: normal;
   border: none;
+  cursor: pointer;
 }
 
-.home-page-container .information-container .buttons button:nth-child(2) {
+.home-page-container .information-container .buttons #home-contact {
   padding: 8px;
   justify-content: center;
   align-items: center;
@@ -125,6 +134,8 @@ body {
   font-weight: 300;
   line-height: normal;
   margin-left: 15px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .atom-2-home {
@@ -215,7 +226,7 @@ body {
     border: none;
   }
 
-  .home-page-container .information-container .buttons button:nth-child(2) {
+  .home-page-container .information-container .buttons #home-contact {
     padding: 8px;
 
     border-radius: 6px;
@@ -318,7 +329,7 @@ body {
         border: none;
       }
     
-      .home-page-container .information-container .buttons button:nth-child(2) {
+      .home-page-container .information-container .buttons #home-contact {
         padding: 8px;
     
         border-radius: 6px;

@@ -74,7 +74,7 @@
   font-family: var(--font-raleway);
   font-size: 1.4vw;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -94,6 +94,7 @@
   border: 1px solid #795c7b;
   margin: 0 auto;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .services-page-container .services .image {
@@ -188,6 +189,7 @@
     padding: 6px 14px;
     font-size: 4vw;
     border-radius: 6px;
+    cursor: pointer;
   }
 
   .services-page-container .services .image {

@@ -1,10 +1,11 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./ServicesPage.css";
-import serviceImage1 from "../assets/serviceImage1.png"
-import serviceImage2 from "../assets/serviceImage2.png"
-import serviceImage3 from "../assets/serviceImage3.png"
+import serviceImage1 from "../assets/site-image-02.jpg"
+import serviceImage2 from "../assets/site-image-03.jpg"
+import serviceImage3 from "../assets/site-image-04.jpg"
 import Atom from "../assets/Atom.png";
+import { Link } from "react-router-dom";
 
 const ServicesPage = () => {
   return (
@@ -26,7 +27,7 @@ const ServicesPage = () => {
               professional growth and ensuring their readiness for the future
               workplace.
             </div>
-            <button>Enquire Today</button>
+            <Link to="/contact" style={{textDecoration: "none"}}><button>Enquire Today</button></Link>
             <div className="image">
               <img src={serviceImage1} alt="" />
             </div>
@@ -41,7 +42,7 @@ const ServicesPage = () => {
               by making science accessible and exciting, nurturing an interest
               in STEAM disciplines from an early age.
             </div>
-            <button>Enquire Today</button>
+            <Link to="/contact" style={{textDecoration: "none"}}><button>Enquire Today</button></Link>
             <div className="image">
               <img src={serviceImage2} alt="" />
             </div>
@@ -56,7 +57,7 @@ const ServicesPage = () => {
               and resources to help teenage girls navigate and pursue their
               passions in the scientific field.
             </div>
-            <button>Enquire Today</button>
+            <Link to="/contact" style={{textDecoration: "none"}}><button>Enquire Today</button></Link>
             <div className="image">
               <img src={serviceImage3} alt="" />
             </div>

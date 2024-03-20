@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import "./HomePage.css";
 import Atom from "../assets/Atom.png";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -13,18 +14,22 @@ const HomePage = () => {
             2013
           </div>
           <div>
-            <span>Welcome to Sisters in Science! </span> For over a decade, our commitment has
-            been consistent in igniting a passion for science and technology
-            among teenagers. Through dynamic programs, hands-on workshops, and
-            mentorship initiatives, we{"'"}ve cultivated an environment where
-            curiosity thrives and possibilities are endless. To learn more,
-            click the buttons below.
+            <span>Welcome to Sisters in Science! </span> For over a decade, our
+            commitment has been consistent in igniting a passion for science and
+            technology among teenagers. Through dynamic programs, hands-on
+            workshops, and mentorship initiatives, we{"'"}ve cultivated an
+            environment where curiosity thrives and possibilities are endless.
+            To learn more, click the buttons below.
           </div>
         </div>
 
         <div className="buttons">
-          <button>Learn More</button>
-          <button>Contact Us</button>
+          <Link to={"/services"} style={{ textDecoration: "none" }}>
+            <button id="home">Learn More</button>{" "}
+          </Link>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <button id="home-contact"> Contact Us</button>{" "}
+          </Link>
         </div>
       </div>
 
