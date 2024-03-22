@@ -206,7 +206,7 @@ body {
   .home-page-container .image-container .img {
     width: 100vw;
     height: 300px;
-    background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\SiteVisual1Mobile.png");
+    background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\SiteVisual1Mobile.jpg");
     background-size: cover;
   }
 
@@ -309,7 +309,7 @@ body {
       .home-page-container .image-container .img {
         width: 100vw;
         height: 50vw;
-        background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\SiteVisual1Tablet.png");
+        background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\SiteVisual1Tablet.jpg");
         background-size: cover;
       }
     
