@@ -4,8 +4,6 @@ import ExternalLogo from "../assets/ExternalLogo.svg";
 import MobileNavIconOpen from "../assets/MobileNavIconOpen.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import MobileNavIcon1 from "../components/MobileNavIcon1";
-// import MobileNavIcon2 from "../components/MobileNavIcon2";
 
 const Header = (prop) => {
   const [navBarState, SetNaBarState] = useState(false);
@@ -41,11 +39,13 @@ const Header = (prop) => {
         </div>
 
         <div className="ExternalLink">
+          <Link to={"https://steam-academy.co.za/"}>
           <img
             src={ExternalLogo}
             className="ExternalLogo"
             alt="sisters in science"
           />
+          </Link>
         </div>
 
         <div className="MobileNav">
@@ -79,7 +79,7 @@ const Header = (prop) => {
           <Link to={"/gallery"} style={{ textDecoration: "none" }}>
             <li>Gallery</li>
           </Link>
-          <Link style={{ textDecoration: "none" }}>
+          <Link style={{ textDecoration: "none" }} to={"https://steam-academy.co.za/"}>
             <li>
               <img src={ExternalLogo} alt="sisters in science" />
             </li>
