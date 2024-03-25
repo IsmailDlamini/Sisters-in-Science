@@ -85,6 +85,7 @@ const GalleryPage = () => {
           }}
         ></li>
       );
+      
     });
 
     const HandleSlideNav = (number) => {
