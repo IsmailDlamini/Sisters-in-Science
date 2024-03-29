@@ -3,8 +3,10 @@ import "./HomePage.css";
 import Atom from "../assets/Atom.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+//import { useEffect } from "react";
 
 const HomePage = () => {
+
   return (
     <div className="home-page-container">
       <div className="information-container">
