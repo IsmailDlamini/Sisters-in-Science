@@ -71,6 +71,7 @@ const GalleryPage = () => {
       const intervalId = setInterval(() => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
       }, 6000);
+      
 
       return () => clearInterval(intervalId);
     }, [slides.length, currentSlide]);
