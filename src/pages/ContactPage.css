@@ -54,7 +54,8 @@
 .contact-page-container .main-content .image-container .image {
   width: 80%;
   height: 90%;
-  background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImage.png");
+  background-image: url("../assets/ContactPageImage.png");
+  /* background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImage.png"); */
   background-size: cover;
 }
 
@@ -221,7 +222,7 @@
   .contact-page-container .main-content .image-container .image {
     width: 95%;
     height: 100%;
-    background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImageMobile.png");
+    background-image: url("../assets/ContactPageImageMobile.png");
   }
 
   /* .contact-page-container .main-content .form-container form {
@@ -328,7 +329,7 @@
   .contact-page-container .main-content .image-container .image {
     width: 95%;
     height: 100%;
-    background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImageMobile.png");
+    background-image: url("../assets/ContactPageImageMobile.png");
   }
 
   .contact-page-container .main-content .form-container form input {
