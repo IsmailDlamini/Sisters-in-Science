@@ -16,7 +16,7 @@ const HomePage = () => {
             2013
           </div>
           <div>
-            <span>Welcome to Ismail in Science! </span> For over a decade, our
+            <span>Welcome to Sisters in Science! </span> For over a decade, our
             commitment has been consistent in igniting a passion for science and
             technology among teenagers. Through dynamic programs, hands-on
             workshops, and mentorship initiatives, we{"'"}ve cultivated an
