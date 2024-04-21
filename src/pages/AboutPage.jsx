@@ -6,10 +6,15 @@ import projectImage2 from "../assets/site-image-05.jpg";
 import projectImage3 from "../assets/site-image-07.jpg";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Who are the Sisters in Science?</title>
+      </Helmet>
+
       <div className="about-page-container">
         <div className="information-container">
           <div className="text">
@@ -32,8 +37,8 @@ const AboutPage = () => {
                   designed to bridge the gap between curiosity and
                   comprehension. Each workshop serves as a vibrant platform,
                   fostering hands-on experiences and interactive learning,
-                  ensuring that science isn{"'"}t just a subject but an immersive
-                  journey filled with excitement and possibility.
+                  ensuring that science isn{"'"}t just a subject but an
+                  immersive journey filled with excitement and possibility.
                 </div>
 
                 <div>
@@ -44,7 +49,9 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              <Link to={"/contact"} style={{textDecoration : "none"}}><button>Contact Us</button></Link>
+              <Link to={"/contact"} style={{ textDecoration: "none" }}>
+                <button>Contact Us</button>
+              </Link>
             </div>
           </div>
 

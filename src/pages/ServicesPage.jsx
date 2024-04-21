@@ -1,15 +1,20 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./ServicesPage.css";
-import serviceImage1 from "../assets/site-image-02.jpg"
-import serviceImage2 from "../assets/site-image-03.jpg"
-import serviceImage3 from "../assets/site-image-04.jpg"
+import serviceImage1 from "../assets/site-image-02.jpg";
+import serviceImage2 from "../assets/site-image-03.jpg";
+import serviceImage3 from "../assets/site-image-04.jpg";
 import Atom from "../assets/Atom.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ServicesPage = () => {
   return (
     <>
+      <Helmet>
+        <title>What can we do for you?</title>
+      </Helmet>
+
       <div className="services-page-container">
         <div className="page-text">
           What can we do for <span>you?</span>
@@ -27,7 +32,9 @@ const ServicesPage = () => {
               professional growth and ensuring their readiness for the future
               workplace.
             </div>
-            <Link to="/contact" style={{textDecoration: "none"}}><button>Enquire Today</button></Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <button>Enquire Today</button>
+            </Link>
             <div className="image">
               <img src={serviceImage1} alt="" />
             </div>
@@ -42,7 +49,9 @@ const ServicesPage = () => {
               by making science accessible and exciting, nurturing an interest
               in STEAM disciplines from an early age.
             </div>
-            <Link to="/contact" style={{textDecoration: "none"}}><button>Enquire Today</button></Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <button>Enquire Today</button>
+            </Link>
             <div className="image">
               <img src={serviceImage2} alt="" />
             </div>
@@ -57,7 +66,9 @@ const ServicesPage = () => {
               and resources to help teenage girls navigate and pursue their
               passions in the scientific field.
             </div>
-            <Link to="/contact" style={{textDecoration: "none"}}><button>Enquire Today</button></Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <button>Enquire Today</button>
+            </Link>
             <div className="image">
               <img src={serviceImage3} alt="" />
             </div>

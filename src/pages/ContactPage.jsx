@@ -2,10 +2,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Atom from "../assets/Atom.png";
 import "./ContactPage.css";
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Get in touch with us today!</title>
+      </Helmet>
+
       <div className="contact-page-container">
         <div className="main-text">
           Get in touch with us <span>today!</span>
