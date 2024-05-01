@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
 
+  // before adding the changes that caeser made and the loading animation
+
   return (
     <div className="home-page-container">
       <div className="information-container">
