@@ -28,8 +28,8 @@ https://github.com/IsmailDlamini/Sisters-in-Science
 
 ## <span style="font-size: 1.2em;">Screenshots:</span>
 ![Screenshot 1](https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103008_dmuteq.png)
-![Screenshot 2]((https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103053_ptas8d.png))
-![Screenshot 23]((https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103053_ptas8d.png))
+![Screenshot 2](https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103053_ptas8d.png)
+![Screenshot 23](https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103053_ptas8d.png)
 
 ...
 
