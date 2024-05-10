@@ -21,40 +21,34 @@ https://github.com/IsmailDlamini/Sisters-in-Science
 ---
 
 ## <span style="font-size: 1.2em;">Technologies Used:</span>
-- [List the technologies/frameworks/languages used to build the site]
-
----
-
-## <span style="font-size: 1.2em;">Features:</span>
-- [List the key features and functionalities of the site]
+- React.js
+- PHP
 
 ---
 
 ## <span style="font-size: 1.2em;">Screenshots:</span>
-![Screenshot 1](link_to_screenshot_1)
-![Screenshot 2](link_to_screenshot_2)
+![Screenshot 1]((https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103008_dmuteq.png))
+![Screenshot 2]((https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103053_ptas8d.png))
+![Screenshot 23]((https://res.cloudinary.com/dbtpr07zv/image/upload/v1715330896/Sisters-in-science%20screen%20shots/Screenshot_2024-05-10_103053_ptas8d.png))
+
 ...
-[Include screenshots of the site to showcase its design and layout]
 
 ---
 
 ## <span style="font-size: 1.2em;">Contributors:</span>
-- [List the contributors who have worked on the site, including their GitHub usernames or names]
+- Designer: Caeser Gama
+- Developer: Ismail Dlamini
+- Project Manager: Sibandiswa Nkuna
 
 ---
 
 ## <span style="font-size: 1.2em;">License:</span>
-[Specify the license under which the site's code is released, if applicable]
-
----
-
-## <span style="font-size: 1.2em;">How to Run Locally:</span>
-[Provide instructions for running the site locally, if applicable]
+Not Applicable
 
 ---
 
 ## <span style="font-size: 1.2em;">Additional Notes:</span>
-[Include any additional notes or information about the site]
+
 
 ...
 
