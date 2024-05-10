@@ -3,7 +3,7 @@
 ---
 
 ## <span style="font-size: 1.2em;">Site Name:</span>
-[Sisters in Science]
+Sisters in Science for teens
 
 ---
 
@@ -11,12 +11,12 @@
 [Normal React.js client side site]
 
 ## <span style="font-size: 1.2em;">URL:</span>
-[sis4teens.co.za]
+(https://sis4teens.co.za)
 
 ---
 
 ## <span style="font-size: 1.2em;">GitHub Repository:</span>
-[Provide the link to the GitHub repository where the site's code is hosted]
+(https://github.com/IsmailDlamini/Sisters-in-Science)
 
 ---
 
