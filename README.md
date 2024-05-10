@@ -8,15 +8,15 @@ Sisters in Science for teens
 ---
 
 ## <span style="font-size: 1.2em;">Description:</span>
-[Normal React.js client side site]
+Normal React.js client side site
 
 ## <span style="font-size: 1.2em;">URL:</span>
-(https://sis4teens.co.za)
+https://sis4teens.co.za
 
 ---
 
 ## <span style="font-size: 1.2em;">GitHub Repository:</span>
-(https://github.com/IsmailDlamini/Sisters-in-Science)
+https://github.com/IsmailDlamini/Sisters-in-Science
 
 ---
 
