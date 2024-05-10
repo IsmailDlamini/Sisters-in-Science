@@ -3,12 +3,58 @@
 ---
 
 ## <span style="font-size: 1.2em;">Site Name:</span>
-[Enter the name of the site]
+[Sisters in Science]
 
 ---
 
 ## <span style="font-size: 1.2em;">Description:</span>
-[Provide a brief description of the site, including its purpose, target audience, and main features]
+[Normal React.js client side site]
+
+## <span style="font-size: 1.2em;">URL:</span>
+[sis4teens.co.za]
+
+---
+
+## <span style="font-size: 1.2em;">GitHub Repository:</span>
+[Provide the link to the GitHub repository where the site's code is hosted]
+
+---
+
+## <span style="font-size: 1.2em;">Technologies Used:</span>
+- [List the technologies/frameworks/languages used to build the site]
+
+---
+
+## <span style="font-size: 1.2em;">Features:</span>
+- [List the key features and functionalities of the site]
+
+---
+
+## <span style="font-size: 1.2em;">Screenshots:</span>
+![Screenshot 1](link_to_screenshot_1)
+![Screenshot 2](link_to_screenshot_2)
+...
+[Include screenshots of the site to showcase its design and layout]
+
+---
+
+## <span style="font-size: 1.2em;">Contributors:</span>
+- [List the contributors who have worked on the site, including their GitHub usernames or names]
+
+---
+
+## <span style="font-size: 1.2em;">License:</span>
+[Specify the license under which the site's code is released, if applicable]
+
+---
+
+## <span style="font-size: 1.2em;">How to Run Locally:</span>
+[Provide instructions for running the site locally, if applicable]
+
+---
+
+## <span style="font-size: 1.2em;">Additional Notes:</span>
+[Include any additional notes or information about the site]
 
 ...
 
