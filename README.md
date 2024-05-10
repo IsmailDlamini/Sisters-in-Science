@@ -1,8 +1,14 @@
-# React + Vite
+# <span style="font-size: 1.5em;">Client Site Information</span>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## <span style="font-size: 1.2em;">Site Name:</span>
+[Enter the name of the site]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## <span style="font-size: 1.2em;">Description:</span>
+[Provide a brief description of the site, including its purpose, target audience, and main features]
+
+...
+
