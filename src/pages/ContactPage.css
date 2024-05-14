@@ -54,8 +54,7 @@
 .contact-page-container .main-content .image-container .image {
   width: 80%;
   height: 90%;
-  background-image: url("../assets/ContactPageImage.png");
-  /* background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImage.png"); */
+  background-image: url("/src/assets/ContactPageImage.png");
   background-size: cover;
 }
 
@@ -222,7 +221,7 @@
   .contact-page-container .main-content .image-container .image {
     width: 95%;
     height: 100%;
-    background-image: url("../assets/ContactPageImageMobile.png");
+    background-image: url("/src/assets/ContactPageImageMobile.png");
   }
 
   /* .contact-page-container .main-content .form-container form {
@@ -293,7 +292,7 @@
 
   .contact-page-container {
     width: 100vw;
-    padding-top: 80px;
+    padding-top: 19vw;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -302,7 +301,7 @@
   .contact-page-container .main-text {
     width: 100%;
     text-align: center;
-    font-size: 10vw;
+    font-size: 7vw;
   }
 
   .contact-page-container .main-content {
@@ -329,7 +328,7 @@
   .contact-page-container .main-content .image-container .image {
     width: 95%;
     height: 100%;
-    background-image: url("../assets/ContactPageImageMobile.png");
+    background-image: url("C:\Users\Ismail\Desktop\ClientProject 2\client\src\assets\ContactPageImageMobile.png");
   }
 
   .contact-page-container .main-content .form-container form input {
@@ -385,4 +384,13 @@
   .contact-page-container .atom-4-contact {
     display: none;
   }
+  .contact-page-container .main-content .form-container form label,
+  .contact-page-container .main-content .form-container form input,
+  input::placeholder {
+    font-size: 3vw;
+  }
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

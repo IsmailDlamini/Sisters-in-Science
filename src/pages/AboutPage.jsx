@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import "./HomePage.css";
 import "./AboutPage.css";
 import Atom from "../assets/Atom.png";
 import projectImage1 from "../assets/site-image-06.jpg";
@@ -6,16 +7,44 @@ import projectImage2 from "../assets/site-image-05.jpg";
 import projectImage3 from "../assets/site-image-07.jpg";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { useEffect, useRef } from "react";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const AboutPage = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const nodes = containerRef.current.querySelectorAll('*');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains('rotating')) {
+            entry.target.style.animation = 'rotate 20s linear infinite, fadein 2s ease forwards';
+          } else {
+            entry.target.style.animation = 'fadein 2s ease forwards';
+          }
+        }
+        
+      });
+    });
+  
+    nodes.forEach((node) => {
+      observer.observe(node);
+    });
+  
+    return () => {
+      nodes.forEach((node) => {
+        observer.unobserve(node);
+      });
+    };
+  }, []);
+
   return (
     <>
-      <Helmet>
-        <title>Who are the Sisters in Science?</title>
-      </Helmet>
 
-      <div className="about-page-container">
+    <LoadingSpinner/>
+
+      <div className="about-page-container" ref={containerRef}>
         <div className="information-container">
           <div className="text">
             <div className="content">
@@ -37,8 +66,8 @@ const AboutPage = () => {
                   designed to bridge the gap between curiosity and
                   comprehension. Each workshop serves as a vibrant platform,
                   fostering hands-on experiences and interactive learning,
-                  ensuring that science isn{"'"}t just a subject but an
-                  immersive journey filled with excitement and possibility.
+                  ensuring that science isn{"'"}t just a subject but an immersive
+                  journey filled with excitement and possibility.
                 </div>
 
                 <div>
@@ -49,9 +78,7 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              <Link to={"/contact"} style={{ textDecoration: "none" }}>
-                <button>Contact Us</button>
-              </Link>
+              <Link to={"/contact"} style={{textDecoration : "none"}}><button id="purple-button">Contact Us</button></Link>
             </div>
           </div>
 
@@ -117,10 +144,10 @@ const AboutPage = () => {
 
         <Header />
 
-        <img src={Atom} className="atom-1-about" alt="" />
-        <img src={Atom} className="atom-2-about" alt="" />
-        <img src={Atom} className="atom-3-about" alt="" />
-        <img src={Atom} className="atom-4-about" alt="" />
+        <img src={Atom} className="atom-1-about rotating" alt="" />
+        <img src={Atom} className="atom-2-about rotating" alt="" />
+        <img src={Atom} className="atom-3-about rotating" alt="" />
+        <img src={Atom} className="atom-4-about rotating" alt="" />
 
         <Footer />
       </div>

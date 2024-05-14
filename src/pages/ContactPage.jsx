@@ -1,17 +1,46 @@
+import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Atom from "../assets/Atom.png";
+import "./HomePage.css";
 import "./ContactPage.css";
-import { Helmet } from "react-helmet";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const ContactPage = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const nodes = containerRef.current.querySelectorAll('*');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains('rotating')) {
+            entry.target.style.animation = 'rotate 20s linear infinite, fadein 2s ease forwards';
+          } else {
+            entry.target.style.animation = 'fadein 2s ease forwards';
+          }
+        }
+        
+      });
+    });
+  
+    nodes.forEach((node) => {
+      observer.observe(node);
+    });
+  
+    return () => {
+      nodes.forEach((node) => {
+        observer.unobserve(node);
+      });
+    };
+  }, []);
+
   return (
     <>
-      <Helmet>
-        <title>Get in touch with us today!</title>
-      </Helmet>
 
-      <div className="contact-page-container">
+    <LoadingSpinner />
+
+      <div className="contact-page-container" ref={containerRef}>
         <div className="main-text">
           Get in touch with us <span>today!</span>
         </div>
@@ -37,7 +66,7 @@ const ContactPage = () => {
                 placeholder="eg. Hey, I would like some career guidance."
               ></textarea>
 
-              <button>Send Message</button>
+              <button id="purple-button">Send Message</button>
             </form>
           </div>
           <div className="image-container">
@@ -46,10 +75,10 @@ const ContactPage = () => {
         </div>
 
         <Header />
-        <img src={Atom} className="atom-1-contact" alt="" />
-        <img src={Atom} className="atom-2-contact" alt="" />
-        <img src={Atom} className="atom-3-contact" alt="" />
-        <img src={Atom} className="atom-4-contact" alt="" />
+        <img src={Atom} className="atom-1-contact rotating" alt="" />
+        <img src={Atom} className="atom-2-contact rotating" alt="" />
+        <img src={Atom} className="atom-3-contact rotating" alt="" />
+        <img src={Atom} className="atom-4-contact rotating" alt="" />
         <Footer />
       </div>
     </>

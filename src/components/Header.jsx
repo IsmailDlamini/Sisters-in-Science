@@ -14,9 +14,9 @@ const Header = (prop) => {
   return (
     <>
       <div className="PageHeader">
-        <div className="Logo">
+        <Link to={"/"} className="Logo">
           <img src={SiteLogo} className="SiteLogo" alt="SiteLogo" />
-        </div>
+        </Link>
 
         <div className="NavBar">
           <ul>

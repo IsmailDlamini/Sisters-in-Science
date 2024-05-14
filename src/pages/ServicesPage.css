@@ -47,11 +47,12 @@
 
 .services-page-container .services .service {
   width: 48%;
-  margin-top: 100px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  align-items: center;
+  gap: 20px;
 }
 
 .services-page-container .services .service-title {
@@ -78,24 +79,6 @@
   line-height: normal;
 }
 
-.services-page-container .services button {
-  display: flex;
-  padding: 13px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  color: #795c7b;
-  font-family: var(--font-raleway);
-  font-size: 1vw;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  border-radius: 6px;
-  border: 1px solid #795c7b;
-  margin: 0 auto;
-  margin-top: 20px;
-  cursor: pointer;
-}
 
 .services-page-container .services .image {
   width: 90%;
@@ -254,7 +237,7 @@
 
 .services-page-container .page-text {
   font-size: 7vw;
-  padding-top: 100px;
+  padding-top: 19vw;
   width: fit-content;
   width: 85%;
   text-align: center;
@@ -278,12 +261,12 @@
 .services-page-container .services .service-title {
   width: 100%;
 
-  font-size: 9vw;
+  font-size: 6vw;
 }
 
 .services-page-container .services .service-description {
   width: 100%;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
@@ -335,9 +318,14 @@
   z-index: 0;
  bottom: 10%;
   left: -10%;
-  width: 60vw;
-  display: block;
+  /* width: 60vw;
+  display: block;*/
 }
 
+} 
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
