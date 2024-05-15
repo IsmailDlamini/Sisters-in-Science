@@ -7,37 +7,57 @@ import serviceImage2 from "../assets/site-image-03.jpg"
 import serviceImage3 from "../assets/site-image-04.jpg"
 import Atom from "../assets/Atom.png";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const ServicesPage = () => {
   const containerRef = useRef(null);
+  const [doneLoading, setDoneLoading] = useState(false);
 
   useEffect(() => {
-    const nodes = containerRef.current.querySelectorAll('*');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains('rotating')) {
-            entry.target.style.animation = 'rotate 20s linear infinite, fadein 2s ease forwards';
-          } else {
-            entry.target.style.animation = 'fadein 2s ease forwards';
-          }
-        }
-        
-      });
-    });
-  
-    nodes.forEach((node) => {
-      observer.observe(node);
-    });
-  
-    return () => {
+    const timeoutId = setTimeout(() => {
+      setDoneLoading(true);
+    }, 1800);
+
+    if (doneLoading) {
+      const nodes = containerRef.current.querySelectorAll("*");
       nodes.forEach((node) => {
-        observer.unobserve(node);
+        node.classList.add("fade-in");
       });
-    };
-  }, []);
+      const elements = containerRef.current.querySelectorAll(".fade-in");
+
+      const AppearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -10px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains("fade-in")) {
+              entry.target.classList.add("appear");
+            }
+          }
+        });
+      }, AppearOptions);
+
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+
+      return () => {
+        elements.forEach((element) => {
+          observer.unobserve(element);
+        });
+        clearTimeout(timeoutId);
+      };
+    } else {
+      const nodes = containerRef.current.querySelectorAll("*");
+      nodes.forEach((node) => {
+        node.classList.add("fade-in");
+      });
+    }
+  }, [doneLoading]);
 
   return (
     <>

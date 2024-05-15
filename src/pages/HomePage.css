@@ -40,6 +40,15 @@ html {
   z-index: 2;
 }
 
+.home-page-container .fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.home-page-container .fade.appear{
+  opacity: 1;
+}
+
 .home-page-container .information-container .content {
   width: 72%;
   padding-top: 120px;

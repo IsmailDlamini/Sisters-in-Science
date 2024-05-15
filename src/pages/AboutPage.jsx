@@ -7,42 +7,61 @@ import projectImage2 from "../assets/site-image-05.jpg";
 import projectImage3 from "../assets/site-image-07.jpg";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const AboutPage = () => {
   const containerRef = useRef(null);
+  const [doneLoading, setDoneLoading] = useState(false);
 
   useEffect(() => {
-    const nodes = containerRef.current.querySelectorAll('*');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains('rotating')) {
-            entry.target.style.animation = 'rotate 20s linear infinite, fadein 2s ease forwards';
-          } else {
-            entry.target.style.animation = 'fadein 2s ease forwards';
-          }
-        }
-        
-      });
-    });
-  
-    nodes.forEach((node) => {
-      observer.observe(node);
-    });
-  
-    return () => {
+    const timeoutId = setTimeout(() => {
+      setDoneLoading(true);
+    }, 1800);
+
+    if (doneLoading) {
+      const nodes = containerRef.current.querySelectorAll("*");
       nodes.forEach((node) => {
-        observer.unobserve(node);
+        node.classList.add("fade-in");
       });
-    };
-  }, []);
+      const elements = containerRef.current.querySelectorAll(".fade-in");
+
+      const AppearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -10px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains("fade-in")) {
+              entry.target.classList.add("appear");
+            }
+          }
+        });
+      }, AppearOptions);
+
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+
+      return () => {
+        elements.forEach((element) => {
+          observer.unobserve(element);
+        });
+        clearTimeout(timeoutId);
+      };
+    } else {
+      const nodes = containerRef.current.querySelectorAll("*");
+      nodes.forEach((node) => {
+        node.classList.add("fade-in");
+      });
+    }
+  }, [doneLoading]);
 
   return (
     <>
-
-    <LoadingSpinner/>
+      <LoadingSpinner />
 
       <div className="about-page-container" ref={containerRef}>
         <div className="information-container">
@@ -66,8 +85,8 @@ const AboutPage = () => {
                   designed to bridge the gap between curiosity and
                   comprehension. Each workshop serves as a vibrant platform,
                   fostering hands-on experiences and interactive learning,
-                  ensuring that science isn{"'"}t just a subject but an immersive
-                  journey filled with excitement and possibility.
+                  ensuring that science isn{"'"}t just a subject but an
+                  immersive journey filled with excitement and possibility.
                 </div>
 
                 <div>
@@ -78,7 +97,9 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              <Link to={"/contact"} style={{textDecoration : "none"}}><button id="purple-button">Contact Us</button></Link>
+              <Link to={"/contact"} style={{ textDecoration: "none" }}>
+                <button id="purple-button">Contact Us</button>
+              </Link>
             </div>
           </div>
 
@@ -93,7 +114,7 @@ const AboutPage = () => {
           </div>
 
           <div className="projects">
-            <div className="project">
+            <div className="project fade-in">
               <div className="description">
                 <div>Rewarding Excellence</div>
                 <div>
@@ -108,7 +129,7 @@ const AboutPage = () => {
               </div>
             </div>
 
-            <div className="project">
+            <div className="project fade-in">
               <div className="description">
                 <div>Closing Resources Gaps</div>
                 <div>
@@ -123,7 +144,7 @@ const AboutPage = () => {
               </div>
             </div>
 
-            <div className="project">
+            <div className="project fade-in">
               <div className="description">
                 <div>Mentoring Tomorrow’s Professionals</div>
                 <div>
