@@ -15,10 +15,10 @@ const HomePage = () => {
     }, 1800);
 
     if (doneLoading) {
-      const nodes = containerRef.current.querySelectorAll("*");
-      nodes.forEach((node) => {
-        node.classList.add("fade-in");
-      });
+      //const nodes = containerRef.current.querySelectorAll("*");
+      // nodes.forEach((node) => {
+      //   node.classList.add("fade-in");
+      // });
       const elements = containerRef.current.querySelectorAll(".fade-in");
 
       const AppearOptions = {
@@ -31,6 +31,8 @@ const HomePage = () => {
           if (entry.isIntersecting) {
             if (entry.target.classList.contains("fade-in")) {
               entry.target.classList.add("appear");
+
+              // this should make sure that it unmounts every time the animation ends
             }
           }
         });
@@ -51,6 +53,9 @@ const HomePage = () => {
       nodes.forEach((node) => {
         node.classList.add("fade-in");
       });
+
+
+      
     }
   }, [doneLoading]);
 

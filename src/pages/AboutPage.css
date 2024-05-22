@@ -40,7 +40,7 @@ body {
 }
 
 .fade-in{
-  opacity: 0;
+  opacity: 1;
   transition: opacity 550ms ease-in;
   animation: 'fadein 2s ease forwards';
 }
